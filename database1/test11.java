@@ -169,7 +169,7 @@ public class test11 {
             String[] kopo28_fields;
             while ((kopo28_fields = kopo28_reader.readNext()) != null) {
                 if (kopo28_fields.length != kopo28_columnCount) { //  컬럼 수 불일치 체크
-                    System.out.printf("[❌ 필드 수 불일치] 라인 %d: %d개 (%s)\n", kopo28_lineCnt + 1, kopo28_fields.length, Arrays.toString(kopo28_fields));
+                    System.out.printf("[ 필드 수 불일치] 라인 %d: %d개 (%s)\n", kopo28_lineCnt + 1, kopo28_fields.length, Arrays.toString(kopo28_fields));
                     continue;
                 }
 
@@ -215,7 +215,7 @@ public class test11 {
 
         } catch (Exception e) {
             //  에러 발생 시 출력
-            System.err.println("❗ 오류 발생: " + e.getMessage());
+            System.err.println("오류 발생: " + e.getMessage());
             e.printStackTrace();
         }
     }
