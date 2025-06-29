@@ -9,7 +9,7 @@ path = "C:\\Users\\USER\\Desktop\\python\\"
 
 class Kakao:
     def __init__(self):
-        self.app_key = "f10bec17f4453e47af01ab6dde3d3e8c"
+        self.app_key = "your-api-key"
         with open(path + "kakao_token.json", "r") as fp:
             self.tokens = json.load(fp)
         self.refresh_token()
